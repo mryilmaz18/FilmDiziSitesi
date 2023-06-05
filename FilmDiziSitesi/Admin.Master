@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="FilmDiziSitesi.Admin" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">KingFoMovie</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/AdminSayfalar/AdminBloglar.aspx">Bloglar</a></li>
+                <li><a href="/AdminSayfalar/Yorumlar.aspx">Yorumlar</a></li>
+                <li><a href="/AdminSayfalar/Iletisim.aspx">Mesajlar</a></li>
+                <li><a href="/AdminSayfalar/Hakkimiz.aspx">Hakkımızda</a></li>
+                <li><a href="/AdminSayfalar/Istatistikler.aspx">İstatistik
+                    </a></li>
+            </ul>
+            <a href="/Anasayfa.aspx">
+            <button class="btn btn-danger navbar-btn">Siteye Yönlendir</button></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+</body>
+</html>
+
